@@ -3,7 +3,7 @@
 ## Overview
 This project integrates Langchain with FastAPI in an Asynchronous, Scalable manner, providing a framework for document indexing and retrieval, using PostgreSQL/pgvector.
 
-Files are organized into embeddings by `file_id`. The primary use case is for integration with [LibreChat](https://librechat.ai), but this simple API can be used for any ID-based use case.
+Files are organized into embeddings by `file_id`. The primary use case is for integration with TreeChat, but this simple API can be used for any ID-based use case.
 
 The main reason to use the ID approach is to work with embeddings on a file-level. This makes for targeted queries when combined with file metadata stored in a database, such as is done by LibreChat.
 
@@ -175,3 +175,4 @@ Run the following commands to install pre-commit formatter, which uses [black](h
 pip install pre-commit
 pre-commit install
 ```
+
